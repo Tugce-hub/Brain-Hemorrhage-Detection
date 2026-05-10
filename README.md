@@ -67,20 +67,30 @@ Sistemi lokal ortamınızda çalıştırmak veya eğitim süreçlerini tekrarlam
 
 **1. Interaktif Web Arayüzünü Başlatma (Gradio)**
 Eğitilmiş en iyi modellerle anlık tahmin yapmak için:
-```bash
-python app.py
+
+    python app.py
+
+**2. Otonom Eğitimi Başlatma (K-Fold CV)**
+Tüm veri seti ile K-Fold çapraz doğrulama eğitimini sıfırdan başlatmak için:
+
+    python train_kfold.py
+
+**3. Hiperparametre Optimizasyonu (Grid Search)**
+
+    python grid_search_resnet.py  # ResNet50 Optimizasyonu için
+    python grid_search.py         # MyCNN Optimizasyonu için
+
 ---
-📁 Dizin Mimarisi (Dosya Yapısı)
 
-Brain-Hemorrhage-Detection/
-├── src/                    # Çekirdek veri seti, model mimarileri ve eğitim lojiği
-├── head_ct/                # Görüntü veri seti (Kaggle)
-├── outputs/                # Kaydedilen modeller (.pth), grafikler ve sonuçlar
-├── app.py                  # Gradio web arayüzü uygulaması
-├── train_kfold.py          # 5-Katlı çapraz doğrulama eğitim betiği
-├── grid_search.py          # MyCNN hiperparametre optimizasyonu betiği
-└── grid_search_resnet.py   # ResNet50 hiperparametre optimizasyonu betiği
+## 📁 Dizin Mimarisi (Dosya Yapısı)
 
+    Brain-Hemorrhage-Detection/
+    ├── src/                    # Çekirdek veri seti, model mimarileri ve eğitim lojiği
+    ├── head_ct/                # Görüntü veri seti (Kaggle)
+    ├── outputs/                # Kaydedilen modeller (.pth), grafikler ve sonuçlar
+    ├── app.py                  # Gradio web arayüzü uygulaması
+    ├── train_kfold.py          # 5-Katlı çapraz doğrulama eğitim betiği
+    ├── grid_search.py          # MyCNN hiperparametre optimizasyonu betiği
+    └── grid_search_resnet.py   # ResNet50 hiperparametre optimizasyonu betiği
 
-
-⚠️ Feragatname: > Bu proje akademik amaçlarla ve derin öğrenme tekniklerinin medikal görüntüler üzerindeki etkinliğini test etmek için geliştirilmiştir. Teşhis için her zaman profesyonel tıbbi yardım alınmalıdır.
+> **⚠️ Feragatname:** > Bu proje akademik amaçlarla ve derin öğrenme tekniklerinin medikal görüntüler üzerindeki etkinliğini test etmek için geliştirilmiştir. Teşhis için her zaman profesyonel tıbbi yardım alınmalıdır.
