@@ -69,7 +69,7 @@ Sistemi lokal ortamınızda çalıştırmak veya eğitim süreçlerini tekrarlam
 Eğitilmiş en iyi modellerle anlık tahmin yapmak için:
 ```bash
 python app.py
-
+---
 📁 Dizin Mimarisi (Dosya Yapısı)
 
 Brain-Hemorrhage-Detection/
@@ -80,6 +80,7 @@ Brain-Hemorrhage-Detection/
 ├── train_kfold.py          # 5-Katlı çapraz doğrulama eğitim betiği
 ├── grid_search.py          # MyCNN hiperparametre optimizasyonu betiği
 └── grid_search_resnet.py   # ResNet50 hiperparametre optimizasyonu betiği
+
 
 
 ⚠️ Feragatname: > Bu proje akademik amaçlarla ve derin öğrenme tekniklerinin medikal görüntüler üzerindeki etkinliğini test etmek için geliştirilmiştir. Teşhis için her zaman profesyonel tıbbi yardım alınmalıdır.
