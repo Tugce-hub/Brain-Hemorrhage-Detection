@@ -49,15 +49,6 @@ Modellerin başarısı hem hiperparametre optimizasyonu (Grid Search) hem de gen
 
 *(Not: MyCNN modeli, k-katlı çapraz doğrulamada bazı lokal katmanlarda **%97.5**'e kadar doğruluk sıçramaları göstererek hafif sıklet yapısına rağmen yüksek potansiyel sergilemiştir, ortalamada %94.5 başarıya oturmuştur.)*
 
----
-
-## 📈 Çıktılar ve Görselleştirme
-Aşağıda modellerimize ait karmaşıklık matrisleri ve eğitim seyri yer almaktadır:
-
-<div align="center">
-  <img src="outputs/resnet50_confusion_matrix.png" alt="ResNet50 Matrix" width="45%">
-  <img src="outputs/mycnn_history.png" alt="CNN Training History" width="45%">
-</div>
 
 ---
 
